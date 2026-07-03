@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useParams, useNavigate } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { ArrowLeft, Plus, Minus, Gift } from 'lucide-react'
 import { useAppStore } from '@/store/appStore'
 import { usePoolStore, generateMockHistory } from '@/store/poolStore'
@@ -53,7 +52,6 @@ export function PoolDetail() {
     )
   }
 
-  const priceHistory = generateMockHistory(pool.priceAtoB, 30)
   const tvlHistory = generateMockHistory(pool.tvl, 30)
   const aprHistory = generateMockHistory(pool.totalApr, 30)
 

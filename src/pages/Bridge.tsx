@@ -177,7 +177,7 @@ function StateProgress({ bridge }: { bridge: BridgeTransfer }) {
 
 export function Bridge() {
   const { t } = useTranslation()
-  const { wallets, connectWallet } = useWalletStore()
+  const { wallets } = useWalletStore()
   const { mode } = useAppStore()
   const { addBridge, updateBridgeState, activeBridges } = useBridgeStore()
 

@@ -1,10 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { TrendingUp, TrendingDown, Minus, Zap } from 'lucide-react'
+import { TrendingUp, TrendingDown, Minus } from 'lucide-react'
 import { useLivePrice } from '@/hooks/useLivePrice'
 import { formatUsd } from '@/lib/utils'
 
-function AnimatedPrice({ value, symbol }: { value: number; symbol: string }) {
+function AnimatedPrice({ value }: { value: number; symbol: string }) {
   const [flash, setFlash] = useState<'up' | 'down' | null>(null)
   const prev = useRef(value)
 

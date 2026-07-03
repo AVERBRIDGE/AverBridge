@@ -1,7 +1,11 @@
-import React, { createContext, useContext, useState, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircle, AlertTriangle, XCircle, Info, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { ToastContext } from './ToastContext'
+
+// Re-export useToast so existing imports don't break
+export { useToast } from './ToastContext'
 
 type ToastType = 'success' | 'warning' | 'error' | 'info'
 
@@ -12,13 +16,6 @@ interface ToastItem {
   description?: string
   duration?: number
 }
-
-interface ToastContextValue {
-  toast: (item: Omit<ToastItem, 'id'>) => void
-  dismiss: (id: string) => void
-}
-
-const ToastContext = createContext<ToastContextValue | null>(null)
 
 const icons: Record<ToastType, React.ReactNode> = {
   success: <CheckCircle className="w-5 h-5 text-success" aria-hidden />,
@@ -34,13 +31,7 @@ const borderColors: Record<ToastType, string> = {
   info: 'border-info/30',
 }
 
-function ToastItem({
-  item,
-  onDismiss,
-}: {
-  item: ToastItem
-  onDismiss: () => void
-}) {
+function ToastItem({ item, onDismiss }: { item: ToastItem; onDismiss: () => void }) {
   return (
     <motion.div
       layout
@@ -85,9 +76,7 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
       const id = Math.random().toString(36).slice(2)
       setToasts((t) => [...t, { ...item, id }])
       const duration = item.duration ?? 5000
-      if (duration > 0) {
-        setTimeout(() => dismiss(id), duration)
-      }
+      if (duration > 0) setTimeout(() => dismiss(id), duration)
     },
     [dismiss]
   )
@@ -108,10 +97,4 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
       </div>
     </ToastContext.Provider>
   )
-}
-
-export function useToast() {
-  const ctx = useContext(ToastContext)
-  if (!ctx) throw new Error('useToast must be used within ToastProvider')
-  return ctx
 }

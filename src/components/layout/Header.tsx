@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { Menu, X, Globe } from 'lucide-react'
 import { ModeToggle } from '../ModeToggle'
@@ -20,7 +20,6 @@ const NAV_ITEMS = [
 export function Header() {
   const { t, i18n } = useTranslation()
   const [mobileOpen, setMobileOpen] = useState(false)
-  const location = useLocation()
   const { language, setLanguage } = useAppStore()
 
   function toggleLang() {

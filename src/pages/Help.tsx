@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { ChevronDown, Shield, ExternalLink, FileCheck } from 'lucide-react'
-import { CHAINS, CHAIN_ORDER } from '@/lib/chains'
+import { CHAINS } from '@/lib/chains'
 import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import { Banner } from '@/components/ui/Banner'

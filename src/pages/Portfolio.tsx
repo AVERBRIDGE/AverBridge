@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { TrendingUp, ArrowRight, Gift, Layers } from 'lucide-react'
 import { useBridgeStore, type BridgeTransfer } from '@/store/bridgeStore'
-import { usePoolStore, MOCK_POOLS } from '@/store/poolStore'
+import { usePoolStore } from '@/store/poolStore'
 import { useWalletStore } from '@/store/walletStore'
 import { formatUsd, formatPercent } from '@/lib/utils'
 import { Card, CardHeader, CardTitle } from '@/components/ui/Card'
@@ -15,7 +15,6 @@ import { Banner } from '@/components/ui/Banner'
 
 function BridgeStatusItem({ bridge }: { bridge: BridgeTransfer }) {
   const { claimBridge } = useBridgeStore()
-  const { t } = useTranslation()
 
   const stateVariantMap: Partial<Record<string, 'warning' | 'info' | 'success'>> = {
     locking: 'warning',

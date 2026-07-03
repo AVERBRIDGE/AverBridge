@@ -1,6 +1,5 @@
 import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { TrendingUp, TrendingDown, Minus, Activity, Layers, ArrowLeftRight, Users } from 'lucide-react'
+import { Activity, Layers, ArrowLeftRight, Users, TrendingUp } from 'lucide-react'
 import { usePlatformStats } from '@/hooks/useLivePrice'
 import { formatUsd } from '@/lib/utils'
 

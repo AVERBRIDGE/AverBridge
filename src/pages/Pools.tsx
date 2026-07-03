@@ -5,7 +5,6 @@ import { Search, SlidersHorizontal } from 'lucide-react'
 import { useAppStore } from '@/store/appStore'
 import { usePoolStore, MOCK_POOLS } from '@/store/poolStore'
 import { PoolCard } from '@/components/PoolCard'
-import { Button } from '@/components/ui/Button'
 import { EmptyState } from '@/components/ui/EmptyState'
 import { SkeletonCard } from '@/components/ui/Skeleton'
 

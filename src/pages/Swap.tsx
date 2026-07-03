@@ -45,7 +45,7 @@ type SwapStep = 'form' | 'review' | 'confirming' | 'done'
 export function Swap() {
   const { t } = useTranslation()
   const { mode } = useAppStore()
-  const { wallets, connectWallet } = useWalletStore()
+  const { wallets } = useWalletStore()
   const { toast } = useToast()
 
   const [step, setStep] = useState<SwapStep>('form')
