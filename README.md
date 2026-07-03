@@ -9,9 +9,10 @@
   <p>
     <img src="https://img.shields.io/badge/network-testnet-38D9C9?style=flat-square&logo=stellar&logoColor=white" alt="testnet"/>
     <img src="https://img.shields.io/badge/status-practice%20mode-7C5CFF?style=flat-square" alt="practice"/>
+    <img src="https://github.com/AVERBRIDGE/AverBridge/actions/workflows/ci.yml/badge.svg" alt="CI"/>
+    <img src="https://img.shields.io/badge/license-Apache%202.0%20%2F%20MIT-F5C542?style=flat-square" alt="license"/>
     <img src="https://img.shields.io/badge/built%20with-React%20%2B%20TypeScript-61DAFB?style=flat-square&logo=react&logoColor=black" alt="react"/>
-    <img src="https://img.shields.io/badge/styled%20with-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="tailwind"/>
-  </p>
+    <img src="https://img.shields.io/badge/styled%20with-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="tailwind"/>  </p>
 </div>
 
 ---
@@ -261,3 +262,14 @@ All `VITE_*` variables are public (bundled into client JS). Never put private ke
 ---
 
 *AVERBRIDGE is a tool, not financial advice. Do your own research before committing real value.*
+
+## License
+
+This project is dual-licensed:
+
+- **Apache License 2.0** — see [LICENSE](LICENSE)
+- **MIT License** — see [LICENSE-MIT](LICENSE-MIT)
+
+You may choose either license for your use. Apache 2.0 provides explicit patent grants; MIT provides maximum permissiveness.
+
+Copyright © 2026 AVERBRIDGE
