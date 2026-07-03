@@ -15,7 +15,7 @@ import { Banner } from '@/components/ui/Banner'
 import { Tooltip } from '@/components/ui/Tooltip'
 import { WalletChip } from '@/components/WalletChip'
 import { ReceiptCard } from '@/components/ReceiptCard'
-import { useToast } from '@/components/ui/Toast'
+import { useToast } from '@/components/ui/ToastContext'
 
 const STELLAR_ASSETS = ['XLM', 'USDC', 'USDT', 'wETH', 'wSOL']
 

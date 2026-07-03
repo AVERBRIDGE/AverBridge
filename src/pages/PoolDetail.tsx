@@ -15,7 +15,7 @@ import { Badge } from '@/components/ui/Badge'
 import { Tooltip } from '@/components/ui/Tooltip'
 import { AreaChart } from '@/components/charts/AreaChart'
 import { ImpermanentLossExplainer } from '@/components/ImpermanentLossExplainer'
-import { useToast } from '@/components/ui/Toast'
+import { useToast } from '@/components/ui/ToastContext'
 import { WalletChip } from '@/components/WalletChip'
 
 type DetailTab = 'add' | 'remove'

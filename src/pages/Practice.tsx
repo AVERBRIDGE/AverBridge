@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
 import { Banner } from '@/components/ui/Banner'
 import { WalletChip } from '@/components/WalletChip'
-import { useToast } from '@/components/ui/Toast'
+import { useToast } from '@/components/ui/ToastContext'
 import { sleep } from '@/lib/utils'
 
 const FAUCET_ASSETS: Record<string, { assets: string[]; amounts: string[] }> = {

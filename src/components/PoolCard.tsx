@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { TrendingUp, ChevronRight } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import type { Pool } from '@/store/poolStore'
 import { formatPercent } from '@/lib/utils'
 import { Badge } from './ui/Badge'

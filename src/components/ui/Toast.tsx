@@ -4,9 +4,6 @@ import { CheckCircle, AlertTriangle, XCircle, Info, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { ToastContext } from './ToastContext'
 
-// Re-export useToast so existing imports don't break
-export { useToast } from './ToastContext'
-
 type ToastType = 'success' | 'warning' | 'error' | 'info'
 
 interface ToastItem {
