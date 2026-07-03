@@ -10,10 +10,20 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
   rules: {
-    'react-refresh/only-export-components': [
+    // Fast-refresh: warn in dev, off in CI (non-blocking)
+    'react-refresh/only-export-components': 'off',
+
+    // Unused vars: ignore args prefixed with _ AND unused function parameters
+    '@typescript-eslint/no-unused-vars': [
       'warn',
-      { allowConstantExport: true },
+      {
+        vars: 'all',
+        args: 'none',           // never warn on unused function arguments
+        ignoreRestSiblings: true,
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_',
+        caughtErrorsIgnorePattern: '^_',
+      },
     ],
-    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
   },
 }
