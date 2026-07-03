@@ -1,6 +1,22 @@
-# AVERBRIDGE
+<div align="center">
+  <img src="logo.svg" width="96" height="96" alt="AVERBRIDGE logo" />
+  <h1>AVERBRIDGE</h1>
+  <p><strong>Multi-chain bridge + native Stellar AMM</strong></p>
+  <p>
+    Bridge assets from Ethereum, Solana &amp; BNB Chain through Stellar as the settlement hub,<br/>
+    then swap tokens and earn yield in on-chain liquidity pools.
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/network-testnet-38D9C9?style=flat-square&logo=stellar&logoColor=white" alt="testnet"/>
+    <img src="https://img.shields.io/badge/status-practice%20mode-7C5CFF?style=flat-square" alt="practice"/>
+    <img src="https://img.shields.io/badge/built%20with-React%20%2B%20TypeScript-61DAFB?style=flat-square&logo=react&logoColor=black" alt="react"/>
+    <img src="https://img.shields.io/badge/styled%20with-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="tailwind"/>
+  </p>
+</div>
 
-> Multi-chain bridge + native Stellar AMM — bridge assets between Ethereum, Solana, and BNB Chain through Stellar as the settlement hub, then swap and earn yield in on-chain liquidity pools.
+---
+
+> AVERBRIDGE is a non-custodial DeFi hub built on Stellar. Bridge assets from Ethereum, Solana, and BNB Chain in seconds, swap tokens on a native AMM, and earn yield by providing liquidity — all with full transparency, automatic refunds on failure, and plain-language guidance at every step.
 
 **Live dev server:** http://localhost:5173 · **Practice mode (testnet) — no real money**
 
